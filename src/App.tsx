@@ -74,7 +74,7 @@ function App() {
   return (
     <>
       <div id="main">
-        <img src="src\assets\logo.png" alt="Logo" />
+        <img src="images/logo.png" alt="Logo" />
         <h1>Welcome to the Bank</h1>
         <p id="subtitle">The Totally Legitimate Bank.</p>
 
