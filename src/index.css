@@ -1,0 +1,30 @@
+#block {
+    background: rgb(242,221,255);
+    background: linear-gradient(337deg, rgba(242,221,255,1) 14%, rgba(162,244,255,1) 96%);
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 600px;
+    border-radius: 0 0 100% 100%;
+    box-shadow: 0 0 20px 2px black;
+    z-index: -1;
+}
+
+#block1 {
+    background-color: rgb(178, 154, 216);
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 700px;
+    border-radius: 0 0 100% 100%;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.8);
+    z-index: -2;    
+}
+  
+  #photo {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    height: 50%;
+    pointer-events: none;
+  }
