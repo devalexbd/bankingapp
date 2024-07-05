@@ -1,4 +1,4 @@
-import { useState } from 'react'
+import { ChangeEvent, useState } from 'react'
 import './App.css'
 import Bank from './components/Bank.tsx'
 import Button from './components/Button.tsx'
@@ -15,8 +15,8 @@ function App() {
    * change occurs on the input field and sets it to userInput
    * @param e Event parameter: listens to all events in an element.
    */
-  function detectInput(e){
-    setUserinput(e.target.value)
+  function detectInput(e: ChangeEvent<HTMLInputElement>){
+    setUserinput(Number(e.target.value))
     // For testing purposes
     console.log('Key press.')
   }
@@ -48,7 +48,7 @@ function App() {
       setNumdisplay(Number(numDisplay) - Number(userInput))
     } catch(error){
       //if something still goes wrong, catch the error
-      alert(error.message)
+      alert((error as Error).message)
     }
   }
 
@@ -66,7 +66,7 @@ function App() {
       }
       setNumdisplay(Number(numDisplay) + Number(userInput))
     } catch(error) {
-      alert(error.message)
+      alert((error as Error).message)
     }
   }
 

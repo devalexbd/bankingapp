@@ -1,7 +1,9 @@
+import { ChangeEvent } from "react";
+
 // Initial description of the datatypes of all props used in this component.
 interface BankProps{
     balance : number;
-    action : any
+    action : (e: ChangeEvent<HTMLInputElement>) => void
 }
 
 // Exporting the function, so it can be imported into App.tsx
