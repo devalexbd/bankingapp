@@ -20,11 +20,18 @@
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.8);
     z-index: -2;    
 }
-  
+
+#photo {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  height: 50%;
+  pointer-events: none;
+  transition: 0.35s;
+}
+
+@media (max-width:1200px){
   #photo {
-    position: absolute;
-    bottom: 0;
-    right: 0;
-    height: 50%;
-    pointer-events: none;
+    height: 30%;
   }
+}

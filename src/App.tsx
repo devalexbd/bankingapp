@@ -1,6 +1,6 @@
 import { ChangeEvent, useState } from 'react'
-import './App.css'
-import Bank from './components/Bank.tsx'
+import './assets/styles/App.scss'
+import Balance from './components/Balance.tsx'
 import Button from './components/Button.tsx'
 
 function App() {
@@ -76,10 +76,10 @@ function App() {
       <div id="main">
         <img src="images/logo.png" alt="Logo" />
         <h1>Welcome to the Bank</h1>
-        <p id="subtitle">The Totally Legitimate Bank.</p>
+        <p>The Totally Legitimate Bank.</p>
 
         {/* Calling the components to be displayed */}
-        <Bank
+        <Balance
         // Assigning the variables and functions to be used as props in
         // child components.
         balance={numDisplay}

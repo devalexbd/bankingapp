@@ -1,14 +1,14 @@
 import { ChangeEvent } from "react";
 
 // Initial description of the datatypes of all props used in this component.
-interface BankProps{
+interface BalanceProps{
     balance : number;
     action : (e: ChangeEvent<HTMLInputElement>) => void
 }
 
 // Exporting the function, so it can be imported into App.tsx
 // Props are called, specifying those from BankProps
-export default function Bank(props : BankProps){
+export default function Balance(props : BalanceProps){
 
     return (
         <>
