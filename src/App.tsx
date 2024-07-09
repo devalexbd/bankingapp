@@ -30,7 +30,7 @@ function App() {
       // Attempt an operation
       if(isNaN(userInput)){
         // Create a custom Error: if input is not a number
-        throw new Error(`${userInput} is Not a Number`)
+        throw new Error('This is not a number.')
       }
       // If the user input is below 0 (a negative number)
       // This prevents a workaround where the user could use negative
@@ -59,7 +59,7 @@ function App() {
   function Deposit(){
     try{
       if(isNaN(userInput)){
-        throw new Error(`${userInput} is Not a Number`)
+        throw new Error('This is not a number.')
       }
       if(userInput < 0){
         throw new Error(`Please do not input negative numbers.`)
